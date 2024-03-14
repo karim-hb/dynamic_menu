@@ -1,0 +1,193 @@
+[
+  {
+    "label": "Menu",
+    "isHeader": true
+  },
+  {
+    "id": "dashboard",
+    "label": "Dashboards",
+    "icon": "las la-tachometer-alt",
+    "link": "/#",
+    "stateVariables": "isDashboard",
+    "subItems": [
+      {
+        "id": "analytics",
+        "label": "Analytics",
+        "link": "/dashboard-analytics",
+        "parentId": "dashboard"
+      },
+      {
+        "id": "crm",
+        "label": "CRM",
+        "link": "/dashboard-crm",
+        "parentId": "dashboard"
+      },
+      {
+        "id": "ecommerce",
+        "label": "Ecommerce",
+        "link": "/dashboard",
+        "parentId": "dashboard"
+      },
+      {
+        "id": "crypto",
+        "label": "Crypto",
+        "link": "/dashboard-crypto",
+        "parentId": "dashboard"
+      },
+      {
+        "id": "projects",
+        "label": "Projects",
+        "link": "/dashboard-projects",
+        "parentId": "dashboard"
+      },
+      {
+        "id": "nft",
+        "label": "NFT",
+        "link": "/dashboard-nft",
+        "parentId": "dashboard"
+      },
+      {
+        "id": "job",
+        "label": "Job",
+        "link": "/dashboard-job",
+        "parentId": "dashboard",
+        "badgeName": "New",
+        "badgeColor": "success"
+      }
+    ]
+  },
+  {
+    "label": "Pages",
+    "isHeader": true
+  },
+  {
+    "id": "authentication",
+    "label": "Authentication",
+    "icon": "lar la-user-circle",
+    "link": "/#",
+
+    "stateVariables": "isAuth",
+    "subItems": [
+      {
+        "id": "signIn",
+        "label": "Sign In",
+        "link": "/#",
+        "isChildItem": true,
+
+        "parentId": "authentication",
+        "stateVariables": "isSignIn",
+        "childItems": [
+          { "id": 1, "label": "Basic", "link": "/auth-signin-basic" },
+          { "id": 2, "label": "Cover", "link": "/auth-signin-cover" }
+        ]
+      },
+      {
+        "id": "signUp",
+        "label": "Sign Up",
+        "link": "/#",
+        "isChildItem": true,
+
+        "parentId": "authentication",
+        "stateVariables": "isSignUp",
+        "childItems": [
+          { "id": 1, "label": "Basic", "link": "/auth-signup-basic" },
+          { "id": 2, "label": "Cover", "link": "/auth-signup-cover" }
+        ]
+      },
+      {
+        "id": "passwordReset",
+        "label": "Password Reset",
+        "link": "/#",
+        "isChildItem": true,
+
+        "parentId": "authentication",
+        "stateVariables": "isPasswordReset",
+        "childItems": [
+          { "id": 1, "label": "Basic", "link": "/auth-pass-reset-basic" },
+          { "id": 2, "label": "Cover", "link": "/auth-pass-reset-cover" }
+        ]
+      },
+      {
+        "id": "passwordCreate",
+        "label": "Password Create",
+        "link": "/#",
+        "isChildItem": true,
+
+        "parentId": "authentication",
+        "stateVariables": "isPasswordCreate",
+        "childItems": [
+          { "id": 1, "label": "Basic", "link": "/auth-pass-change-basic" },
+          { "id": 2, "label": "Cover", "link": "/auth-pass-change-cover" }
+        ]
+      },
+      {
+        "id": "lockScreen",
+        "label": "Lock Screen",
+        "link": "/#",
+        "isChildItem": true,
+
+        "parentId": "authentication",
+        "stateVariables": "isLockScreen",
+        "childItems": [
+          { "id": 1, "label": "Basic", "link": "/auth-lockscreen-basic" },
+          { "id": 2, "label": "Cover", "link": "/auth-lockscreen-cover" }
+        ]
+      },
+      {
+        "id": "logout",
+        "label": "Logout",
+        "link": "/#",
+        "isChildItem": true,
+
+        "parentId": "authentication",
+        "stateVariables": "isLogout",
+        "childItems": [
+          { "id": 1, "label": "Basic", "link": "/auth-logout-basic" },
+          { "id": 2, "label": "Cover", "link": "/auth-logout-cover" }
+        ]
+      },
+      {
+        "id": "successMessage",
+        "label": "Success Message",
+        "link": "/#",
+        "isChildItem": true,
+
+        "parentId": "authentication",
+        "stateVariables": "isSuccessMessage",
+        "childItems": [
+          { "id": 1, "label": "Basic", "link": "/auth-success-msg-basic" },
+          { "id": 2, "label": "Cover", "link": "/auth-success-msg-cover" }
+        ]
+      },
+      {
+        "id": "twoStepVerification",
+        "label": "Two Step Verification",
+        "link": "/#",
+        "isChildItem": true,
+
+        "parentId": "authentication",
+        "stateVariables": "isVerification",
+        "childItems": [
+          { "id": 1, "label": "Basic", "link": "/auth-twostep-basic" },
+          { "id": 2, "label": "Cover", "link": "/auth-twostep-cover" }
+        ]
+      },
+      {
+        "id": "errors",
+        "label": "Errors",
+        "link": "/#",
+        "isChildItem": true,
+
+        "parentId": "authentication",
+        "stateVariables": "isError",
+        "childItems": [
+          { "id": 1, "label": "404 Basic", "link": "/auth-404-basic" },
+          { "id": 2, "label": "404 Cover", "link": "/auth-404-cover" },
+          { "id": 3, "label": "404 Alt", "link": "/auth-404-alt" },
+          { "id": 4, "label": "500", "link": "/auth-500" },
+          { "id": 5, "label": "Offline Page", "link": "/auth-offline" }
+        ]
+      }
+    ]
+  }
+]
